@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_text_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="none"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <GridLayout
+        android:id="@+id/basic_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_display"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginBottom="16dp">
+
+        <!-- Basic calculator buttons -->
+        <Button
+            android:id="@+id/button_0"
+            android:text="0"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_1"
+            android:text="1"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_2"
+            android:text="2"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_3"
+            android:text="3"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_4"
+            android:text="4"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_5"
+            android:text="5"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_6"
+            android:text="6"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_7"
+            android:text="7"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_8"
+            android:text="8"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_9"
+            android:text="9"
+            android:onClick="onDigitClick" />
+        <Button
+            android:id="@+id/button_dot"
+            android:text="."
+            android:onClick="onDecimalClick" />
+        <Button
+            android:id="@+id/button_add"
+            android:text="+"
+            android:onClick="onOperatorClick" />
+        <Button
+            android:id="@+id/button_subtract"
+            android:text="-"
+            android:onClick="onOperatorClick" />
+        <Button
+            android:id="@+id/button_multiply"
+            android:text="*"
+            android:onClick="onOperatorClick" />
+        <Button
+            android:id="@+id/button_divide"
+            android:text="/"
+            android:onClick="onOperatorClick" />
+        <Button
+            android:id="@+id/button_equal"
+            android:text="="
+            android:onClick="onEqualClick" />
+        <Button
+            android:id="@+id/button_clear"
+            android:text="C"
+            android:onClick="onClearClick" />
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/scientific_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/basic_buttons"
+        android:columnCount="4"
+        android:rowCount="2">
+
+        <!-- Scientific function buttons -->
+        <Button
+            android:id="@+id/button_sin"
+            android:text="sin"
+            android:onClick="onFunctionClick" />
+        <Button
+            android:id="@+id/button_cos"
+            android:text="cos"
+            android:onClick="onFunctionClick" />
+        <Button
+            android:id="@+id/button_tan"
+            android:text="tan"
+            android:onClick="onFunctionClick" />
+        <Button
+            android:id="@+id/button_log"
+            android:text="log"
+            android:onClick="onFunctionClick" />
+    </GridLayout>
+</RelativeLayout>
